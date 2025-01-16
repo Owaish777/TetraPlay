@@ -1,0 +1,77 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Screen" style="flex-grow: 1; background-image: none;">
+        <ui:VisualElement name="MainMenu" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; display: flex;">
+            <ui:VisualElement name="Leaderboard" style="flex-grow: 0; height: 70%;">
+                <ui:VisualElement name="LeaderBoard" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 4%; padding-right: 4%; padding-top: 4%; padding-bottom: 4%; display: flex; left: auto; opacity: 1; align-items: center;">
+                    <ui:VisualElement style="flex-grow: 0.2; height: auto;" />
+                    <ui:Label tabindex="-1" text="LEADERBOARD" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 117px; -unity-font: url(&quot;project://database/Assets/images/arialbd.ttf?fileID=12800000&amp;guid=b0f71f7d8dfc9d34986dffc2e3021578&amp;type=3#arialbd&quot;);" />
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 0.2; flex-direction: row; align-items: stretch; justify-content: center; align-self: center;">
+                        <ui:VisualElement style="flex-grow: 0.5; width: 0;" />
+                        <ui:VisualElement style="flex-grow: 0; width: auto; left: auto; -unity-text-align: upper-left;">
+                            <ui:Label tabindex="-1" text="      " parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 60px;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="1a" class="label name" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="2a" class="label name" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="3a" class="label name" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="4a" class="label name" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="5a" class="label name" style="display: flex;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="6a" class="label name" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="7a" class="label name" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="8a" class="label name" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="9a" parse-escape-sequences="false" enable-rich-text="true" class="label name" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="10a" class="label name" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="VisualElement" style="flex-grow: 1;">
+                            <ui:Label tabindex="-1" text="Name" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); -unity-font: url(&quot;project://database/Assets/images/arialbd.ttf?fileID=12800000&amp;guid=b0f71f7d8dfc9d34986dffc2e3021578&amp;type=3#arialbd&quot;); font-size: 60px;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="0" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="1" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="2" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="3" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="4" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="5" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="6" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="7" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="8" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="9" class="label name" style="-unity-text-align: upper-left;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="VisualElement" style="flex-grow: 1; display: none;">
+                            <ui:Label tabindex="-1" text="REG ID" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" style="color: rgb(255, 255, 255); -unity-font: url(&quot;project://database/Assets/images/arialbd.ttf?fileID=12800000&amp;guid=b0f71f7d8dfc9d34986dffc2e3021578&amp;type=3#arialbd&quot;); font-size: 60px;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="0n" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="1n" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="2n" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="3n" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="4n" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="5n" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="6n" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="7n" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="8n" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="9n" class="label name" style="-unity-text-align: upper-left;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="VisualElement" style="flex-grow: 1;">
+                            <ui:Label tabindex="-1" text="Score" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); -unity-font: url(&quot;project://database/Assets/images/arialbd.ttf?fileID=12800000&amp;guid=b0f71f7d8dfc9d34986dffc2e3021578&amp;type=3#arialbd&quot;); font-size: 60px;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="0s" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="1s" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="2s" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="3s" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="4s" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="5s" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="6s" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="7s" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="8s" class="label name" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="9s" class="label name" style="-unity-text-align: upper-left;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Buttons" style="flex-grow: 0; height: 30%;">
+                <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StartButton" style="background-image: url(&quot;project://database/Assets/Crazyball-game-template/Textures/Menu/btn.png?fileID=2800000&amp;guid=39a122082ec2dbe4298006998ff76b4a&amp;type=3#btn&quot;); width: 503px; height: 214px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="GameUI" style="flex-grow: 1; align-items: center; display: none;">
+            <ui:VisualElement name="PauseMenu" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; flex-direction: row; align-items: flex-end; justify-content: space-between; display: none;">
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 86px;" />
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 81px;" />
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="Score" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ScoreText" style="font-size: 88px; left: auto; top: 6%; position: absolute; display: flex;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
