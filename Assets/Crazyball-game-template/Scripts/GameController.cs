@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UIElements;
 
 namespace Crazyball
 {
@@ -48,6 +49,11 @@ namespace Crazyball
 
 
 		public static GameController instance;
+
+		//[SerializeField] UIDocument document;
+		VisualElement root;
+
+		//	, gameOverMenu;
 
 
         ///***********************************************************************
@@ -176,16 +182,15 @@ namespace Crazyball
 		///***********************************************************************
 		void processGameover()
 		{
-			gameOverPlane.SetActive(true);
-			GameoverManager.instance.DisplayEndScore();
+			GameoverManager.instance.displayGameOverMenu();
 
 			//Do this only once
 			//Display external link to players
-			if(PlayerPrefs.GetInt("DisplayExternalLink", 0) == 0)
+			/*if(PlayerPrefs.GetInt("DisplayExternalLink", 0) == 0)
             {
 				PlayerPrefs.SetInt("DisplayExternalLink", 1);
 				Application.OpenURL("https://www.fiverr.com/finalbossgame");
-			}
+			}*/
 		}
 
 

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 namespace Crazyball
 {
@@ -18,7 +19,15 @@ namespace Crazyball
 		private Page currentPage = Page.PLAY;
 
 
-		void Awake()
+        VisualElement root, pauseMenu;
+
+        private void Start()
+        {
+			root = UIManager.root;
+			pauseMenu = root.Q<VisualElement>("PauseMenu");
+        }
+
+        void Awake()
 		{
 			isPaused = false;
 			Time.timeScale = 1.0f;
@@ -64,8 +73,9 @@ namespace Crazyball
 			isPaused = true;
 			Time.timeScale = 0;
 			AudioListener.volume = 0;
-			if (pausePlane)
-				pausePlane.SetActive(true);
+
+			pauseMenu.style.display = DisplayStyle.Flex;
+
 			currentPage = Page.PAUSE;
 		}
 
@@ -75,8 +85,9 @@ namespace Crazyball
 			isPaused = false;
 			Time.timeScale = 1.0f;
 			AudioListener.volume = 1.0f;
-			if (pausePlane)
-				pausePlane.SetActive(false);
+
+            pauseMenu.style.display = DisplayStyle.None;
+            
 			currentPage = Page.PLAY;
 		}
 

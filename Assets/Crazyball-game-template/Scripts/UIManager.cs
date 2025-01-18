@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -9,18 +10,23 @@ namespace Crazyball
     {
         [SerializeField] GameObject game;
 
-        UIDocument document;
-        VisualElement root , mainMenu , gameUI;
+
+        VisualElement mainMenu , gameUI;
 
         Button startButton;
-        
+
+        [HideInInspector]
+        public UIDocument document;
+        public static VisualElement root;
+
+
         void Start()
         {
             document = GetComponent<UIDocument>();
             root = document.rootVisualElement;
 
-
-            startButton = root.Q<Button>("StartButton");
+            startButton = root.Q<Button>("PlayButton");
+            
             startButton.RegisterCallback<ClickEvent>(onStartButtonPressed);
 
             
@@ -35,7 +41,6 @@ namespace Crazyball
             gameUI.style.display = DisplayStyle.Flex;
 
             game.SetActive(true);
-            //Debug.Log(GameController.instance);
 
             GameController.instance.setValues();
         }

@@ -12,13 +12,19 @@ namespace Crazyball
 		/// We check all player collisions here.
 		/// We also calculate the score in this class. 
 		/// </summary>
-		[SerializeField] UIDocument document;
 		public static int playerScore;          //player score
-		//public Text scoreTextDynamic;     //gameobject which shows the score on screen
+												//public Text scoreTextDynamic;     //gameobject which shows the score on screen
 
+		VisualElement root;
 		Label scoreText;
 
-		void Awake()
+        private void Start()
+        {
+			root = UIManager.root;
+            scoreText = root.Q<Label>("ScoreText");
+        }
+
+        void Awake()
 		{
 			playerScore = 0;
 			//Disable screen dimming on mobile devices
@@ -26,7 +32,7 @@ namespace Crazyball
 			//Playe the game with a fixed framerate in all platforms
 			Application.targetFrameRate = 60;
 
-			scoreText = document.rootVisualElement.Q<Label>("ScoreText");
+			
 		}
 
 

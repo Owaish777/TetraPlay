@@ -1,0 +1,22 @@
+.text {
+    font-size: 77px;
+    margin-top: 17px;
+    margin-right: 17px;
+    margin-bottom: 17px;
+    margin-left: 17px;
+}
+
+.score {
+}
+
+.button {
+    font-size: 98px;
+    width: 25%;
+    height: 30%;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+}

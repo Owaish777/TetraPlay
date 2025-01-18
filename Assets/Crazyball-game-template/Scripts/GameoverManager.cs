@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 namespace Crazyball
 {
@@ -13,25 +13,36 @@ namespace Crazyball
 
 		public static GameoverManager instance;
 
-		public Text scoreText;                    //gameobject which shows the score on screen
-		public Text bestScoreText;                //gameobject which shows the best saved score on screen
+		//public Text scoreText;                    //gameobject which shows the score on screen
+		//public Text bestScoreText;                //gameobject which shows the best saved score on screen
+
+        VisualElement root , gameOverMenu;
+		Button home, restart;
+
+		void Start()
+		{
+            saveScore();
+
+            root = UIManager.root;
+            gameOverMenu = root.Q<VisualElement>("GameOverMenu");
+
+			//home = root.Q<VisualElement>()
+        }
 
         private void Awake()
         {
 			instance = this;
         }
 
-        public void DisplayEndScore()
+        public void displayGameOverMenu()
 		{
-			//Set the new score on the screen
-			scoreText.text = PlayerManager.playerScore.ToString();
-			bestScoreText.text = PlayerPrefs.GetInt("bestScore").ToString();
+            gameOverMenu.style.display = DisplayStyle.Flex;
+
+            //Set the new score on the screen
+            //scoreText.text = PlayerManager.playerScore.ToString();
+			//bestScoreText.text = PlayerPrefs.GetInt("bestScore").ToString();
 		}
 
-        private void Start()
-        {
-			saveScore();
-		}
 
 
 		///***********************************************************************
