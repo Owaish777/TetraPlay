@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public static class DatabaseInterection 
+public static class DBConnector
 {
 
     public static string apiUrl = "http://127.0.0.1:5000";
@@ -50,11 +50,11 @@ public static class DatabaseInterection
         ApiService.PUT(apiUrl + putPlayerEndPoint , jsonData, success, failer);
     }
 
-    public static void postPlayerScore(PlayerScore score , Action<UnityWebRequest> success, Action<UnityWebRequest> failer)
+  /*  public static void postPlayerScore(PlayerScore score , Action<UnityWebRequest> success, Action<UnityWebRequest> failer)
     {
         string jsonData = JsonUtility.ToJson(score);
         ApiService.POST(apiUrl + postPlayerScoreEndPoint , jsonData , success, failer);
-    }
+    }*/
 
     public static void getAllScores(Action<UnityWebRequest> success, Action<UnityWebRequest> failer)
     {
