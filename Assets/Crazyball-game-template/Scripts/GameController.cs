@@ -50,10 +50,10 @@ namespace Crazyball
 
 		public static GameController instance;
 
-		//[SerializeField] UIDocument document;
-		VisualElement root;
+		[SerializeField] UIDocument document;
+		VisualElement root , gameUi;
 
-		//	, gameOverMenu;
+        //	, gameOverMenu;
 
 
         ///***********************************************************************
@@ -64,28 +64,29 @@ namespace Crazyball
         /// </summary>
         /// 
 
+        private void Start()
+        {
+			root = document.rootVisualElement;
+			gameUi = root.Q<VisualElement>("GameUI");
+        }
+
         private void Awake()
         {
             instance = this;
+
+            //gameOverPlane.SetActive(false);             //hide the gameover plane
+            mainBackground.GetComponent<Renderer>().material.color = new Color(1, 1, 1);    //set the background color to default
+
+            createMaze = true;          //allow maze creation
+
+            currentLevel = 1;
+            levelPassedTime = 0;
+            levelStartTime = 0;
+            moveSpeed = 1.2f;
+            cloneInterval = 1.0f;
+            gameOver = false;
+            gameOverFlag = false;
         }
-
-
-
-        public void setValues()
-		{
-			gameOverPlane.SetActive(false);             //hide the gameover plane
-			mainBackground.GetComponent<Renderer>().material.color = new Color(1, 1, 1);    //set the background color to default
-
-			createMaze = true;          //allow maze creation
-
-			currentLevel = 1;
-			levelPassedTime = 0;
-			levelStartTime = 0;
-			moveSpeed = 1.2f;
-			cloneInterval = 1.0f;
-			gameOver = false;
-			gameOverFlag = false;
-		}
 
 
 		///***********************************************************************
@@ -182,6 +183,7 @@ namespace Crazyball
 		///***********************************************************************
 		void processGameover()
 		{
+			gameUi.style.display = DisplayStyle.None;
 			GameoverManager.instance.displayGameOverMenu();
 
 			//Do this only once

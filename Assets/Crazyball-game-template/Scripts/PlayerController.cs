@@ -89,6 +89,22 @@ namespace Crazyball
 			if (!GetComponent<AudioSource>().isPlaying)
 				GetComponent<AudioSource>().Play();
 		}
+
+
+        ///***********************************************************************
+        /// Collision detection and management
+        ///***********************************************************************
+        void OnCollisionEnter(Collision c)
+		{
+			//collision with mazes and enemyballs leads to a sudden gameover
+
+			if (c.gameObject.tag == "Maze")
+			{
+				print("Game Over");
+				GameController.gameOver = true;
+			}
+
+		}
 	}
 
 }

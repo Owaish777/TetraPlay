@@ -13,26 +13,33 @@ namespace Crazyball
 
 
 		public static bool isPaused;        //is game already paused?
-		public GameObject pausePlane;       //we move this plane over all other elements in the game to simulate the pause
 
 		public enum Page { PLAY, PAUSE }
 		private Page currentPage = Page.PLAY;
 
+		[SerializeField] UIDocument document;
+
 
         VisualElement root, pauseMenu;
 
+		Button play, home;
+
         private void Start()
         {
-			root = UIManager.root;
+			root = document.rootVisualElement.Q<VisualElement>("GameUI");
 			pauseMenu = root.Q<VisualElement>("PauseMenu");
+
+			play = root.Q<Button>("Play_PauseMenu");
+			play.RegisterCallback<ClickEvent>(onPlayButtonClicked);
+
+			home = root.Q<Button>("Home_PauseMenu");
+			home.RegisterCallback<ClickEvent>(onHomeButtonClicked);
         }
 
         void Awake()
 		{
 			isPaused = false;
 			Time.timeScale = 1.0f;
-			if (pausePlane)
-				pausePlane.SetActive(false);
 		}
 
 
@@ -63,8 +70,29 @@ namespace Crazyball
 			}
 		}
 
+		void onPlayButtonClicked(ClickEvent evt)
+		{
+			UnPauseGame();
+		}
 
-		public void PauseGame()
+		void onHomeButtonClicked(ClickEvent evt)
+		{
+            StartCoroutine(LoadSceneAsync("Menu_CrazyBall"));
+        }
+
+        IEnumerator LoadSceneAsync(string sceneName)
+        {
+            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+            while (!operation.isDone)
+            {
+                float progress = Mathf.Clamp01(operation.progress / 0.9f);
+                Debug.Log("Loading progress: " + (progress * 100) + "%");
+                yield return null;
+            }
+        }
+
+
+        public void PauseGame()
 		{
 			if (GameController.gameOver)
 				return;

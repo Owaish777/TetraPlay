@@ -1,0 +1,80 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/main%20menu.uss?fileID=7433441132597879392&amp;guid=dd3087c7fa715d6439bc293b98127b0f&amp;type=3#main menu" />
+    <ui:VisualElement name="Screen" style="flex-grow: 1; background-image: none;">
+        <ui:VisualElement name="MainMenu" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; display: flex;">
+            <ui:VisualElement name="Leaderboard" style="flex-grow: 0; height: 60%;">
+                <ui:VisualElement name="LeaderBoard" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 4%; padding-right: 4%; padding-top: 4%; padding-bottom: 4%; display: flex; left: auto; opacity: 1; align-items: center;">
+                    <ui:VisualElement style="flex-grow: 0.2; height: auto;" />
+                    <ui:Label tabindex="-1" text="LEADERBOARD" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 117px; -unity-font: url(&quot;project://database/Assets/Crazyball-game-template/Fonts/Crazyball.TTF?fileID=12800000&amp;guid=987bb9dbd4717bd40a9f78b7ec5780d0&amp;type=3#Crazyball&quot;);" />
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 0.2; flex-direction: row; align-items: stretch; justify-content: center; align-self: center;">
+                        <ui:VisualElement style="flex-grow: 0.5; width: 0;" />
+                        <ui:VisualElement style="flex-grow: 0; width: auto; left: auto; -unity-text-align: upper-left;">
+                            <ui:Label tabindex="-1" text="      " parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 60px;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="1a" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="2a" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="3a" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="4a" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="5a" style="display: flex;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="6a" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="7a" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="8a" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="9a" parse-escape-sequences="false" enable-rich-text="true" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="10a" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="VisualElement" style="flex-grow: 1;">
+                            <ui:Label tabindex="-1" text="Name" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); -unity-font: url(&apos;absolute&apos;); font-size: 60px;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="0" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="1" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="2" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="3" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="4" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="5" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="6" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="7" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="8" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="9" style="-unity-text-align: upper-left;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="VisualElement" style="flex-grow: 1; display: none;">
+                            <ui:Label tabindex="-1" text="REG ID" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" style="color: rgb(255, 255, 255); -unity-font: url(&apos;absolute&apos;); font-size: 60px;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="0n" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="1n" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="2n" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="3n" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="4n" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="5n" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="6n" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="7n" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="8n" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="9n" style="-unity-text-align: upper-left;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="VisualElement" style="flex-grow: 1;">
+                            <ui:Label tabindex="-1" text="Score" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); -unity-font: url(&apos;absolute&apos;); font-size: 60px;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="0s" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="1s" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="2s" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="3s" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="4s" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="5s" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="6s" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="7s" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="8s" style="-unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="9s" style="-unity-text-align: upper-left;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Controls_MainMenu" style="flex-grow: 0; height: 40%; align-items: center; justify-content: center;">
+                <ui:VisualElement name="VisualElement" style="flex-grow: 0; height: 80%; width: 100%; align-items: center;">
+                    <ui:Label tabindex="-1" text="Best Score" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font: url(&quot;project://database/Assets/Crazyball-game-template/Fonts/Crazyball.TTF?fileID=12800000&amp;guid=987bb9dbd4717bd40a9f78b7ec5780d0&amp;type=3#Crazyball&quot;);" />
+                    <ui:Label tabindex="-1" text="000" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font: url(&quot;project://database/Assets/Crazyball-game-template/Fonts/Crazyball.TTF?fileID=12800000&amp;guid=987bb9dbd4717bd40a9f78b7ec5780d0&amp;type=3#Crazyball&quot;);" />
+                    <ui:Label tabindex="-1" text="Last Score" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font: url(&quot;project://database/Assets/Crazyball-game-template/Fonts/Crazyball.TTF?fileID=12800000&amp;guid=987bb9dbd4717bd40a9f78b7ec5780d0&amp;type=3#Crazyball&quot;);" />
+                    <ui:Label tabindex="-1" text="000" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font: url(&quot;project://database/Assets/Crazyball-game-template/Fonts/Crazyball.TTF?fileID=12800000&amp;guid=987bb9dbd4717bd40a9f78b7ec5780d0&amp;type=3#Crazyball&quot;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="VisualElement" style="flex-grow: 0; height: 30%; flex-direction: row; align-items: center; width: 100%; justify-content: space-around;">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ExitButton" style="background-image: url(&quot;project://database/Assets/Crazyball-game-template/Textures/Menu/exitButton.png?fileID=2800000&amp;guid=8a89e6e2a36e4fc49a0a6422c2d727a6&amp;type=3#exitButton&quot;); width: 23%; height: 82%; -unity-font: url(&quot;project://database/Assets/Crazyball-game-template/Fonts/Crazyball.TTF?fileID=12800000&amp;guid=987bb9dbd4717bd40a9f78b7ec5780d0&amp;type=3#Crazyball&quot;);" />
+                    <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlayButton" style="background-image: url(&quot;project://database/Assets/Crazyball-game-template/Textures/Menu/btn.png?fileID=2800000&amp;guid=39a122082ec2dbe4298006998ff76b4a&amp;type=3#btn&quot;); width: 503px; height: 214px; -unity-font: url(&quot;project://database/Assets/Crazyball-game-template/Fonts/Crazyball.TTF?fileID=12800000&amp;guid=987bb9dbd4717bd40a9f78b7ec5780d0&amp;type=3#Crazyball&quot;);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

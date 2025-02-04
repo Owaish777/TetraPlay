@@ -5,22 +5,23 @@ using UnityEngine.UIElements;
 
 namespace Crazyball
 {
-	public class PlayerManager : MonoBehaviour
+	public class PlayerScoreManager : MonoBehaviour
 	{
 		/// <summary>
-		/// Main Player manager class.
-		/// We check all player collisions here.
-		/// We also calculate the score in this class. 
+		/// Main Player Score manager class.
+		/// We calculate the score in this class. 
 		/// </summary>
 		public static int playerScore;          //player score
 												//public Text scoreTextDynamic;     //gameobject which shows the score on screen
+
+		[SerializeField] UIDocument document;
 
 		VisualElement root;
 		Label scoreText;
 
         private void Start()
         {
-			root = UIManager.root;
+			root = document.rootVisualElement.Q<VisualElement>("GameUI");
             scoreText = root.Q<Label>("ScoreText");
         }
 
@@ -58,24 +59,6 @@ namespace Crazyball
 		}
 
 
-		///***********************************************************************
-		/// Collision detection and management
-		///***********************************************************************
-		void OnCollisionEnter(Collision c)
-		{
-			//collision with mazes and enemyballs leads to a sudden gameover
-
-			if (c.gameObject.tag == "Maze")
-			{
-				print("Game Over");
-				GameController.gameOver = true;
-			}
-
-			if (c.gameObject.tag == "enemyBall")
-			{
-				Destroy(c.gameObject);
-			}
-		}
 
 
 		void playSfx(AudioClip _sfx)

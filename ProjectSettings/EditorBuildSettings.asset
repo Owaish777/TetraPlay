@@ -6,8 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Crazyball-game-template/Scene/Menu.unity
-    guid: 00000000000000000000000000000000
+    path: Assets/Crazyball-game-template/Scene/Menu_CrazyBall.unity
+    guid: 887f2c93ab25f1f4cb4cfb9765885c78
   - enabled: 1
-    path: Assets/Crazyball-game-template/Scene/Game.unity
-    guid: 00000000000000000000000000000000
+    path: Assets/Crazyball-game-template/Scene/Game_CrazyBall.unity
+    guid: dee3b45defa3ad54dafc7418efeff3eb
+  m_configObjects: {}
