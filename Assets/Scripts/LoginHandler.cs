@@ -35,7 +35,7 @@ public struct Player
 }
 
 
-[System.Serializable]
+/*[System.Serializable]
 public struct Score
 {
     public string playerId;
@@ -49,4 +49,4 @@ public struct Score
         id = null;
     }
 
-}
+}*/

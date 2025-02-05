@@ -20,11 +20,14 @@ namespace Crazyball
         public UIDocument document;
         public static VisualElement root;
 
+        [SerializeField] StyleSheet style;
 
         void Start()
         {
             document = GetComponent<UIDocument>();
             root = document.rootVisualElement;
+
+            root.styleSheets.Add(style);
 
             startButton = root.Q<Button>("PlayButton");
             startButton.RegisterCallback<ClickEvent>(onStartButtonPressed);

@@ -73,8 +73,6 @@ namespace Crazyball
         private void Awake()
         {
             instance = this;
-
-            //gameOverPlane.SetActive(false);             //hide the gameover plane
             mainBackground.GetComponent<Renderer>().material.color = new Color(1, 1, 1);    //set the background color to default
 
             createMaze = true;          //allow maze creation

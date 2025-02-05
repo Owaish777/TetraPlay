@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UIElements;
 
 namespace Crazyball
 {
@@ -32,11 +32,11 @@ namespace Crazyball
 
 			canTap = true; //player can tap on buttons
 
-			bestScore = PlayerPrefs.GetInt("bestScore");
+/*			bestScore = PlayerPrefs.GetInt("bestScore");
 			bestScoreText.text = bestScore.ToString();
 
 			lastScore = PlayerPrefs.GetInt("lastScore");
-			lastScoreText.text = lastScore.ToString();
+			lastScoreText.text = lastScore.ToString();*/
 		}
 
 

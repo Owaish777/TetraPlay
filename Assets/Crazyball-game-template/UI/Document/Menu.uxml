@@ -1,0 +1,61 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Crazyball-game-template/UI/Styles/main%20menu.uss?fileID=7433441132597879392&amp;guid=15cbec15c5c65384db238b6cb17c0b53&amp;type=3#main menu" />
+    <ui:VisualElement name="Screen" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Crazyball-game-template/Textures/Backgrounds/background.png?fileID=2800000&amp;guid=36b82864c4b53ee40a02deb3d9f42ad8&amp;type=3#background&quot;); display: flex;">
+        <ui:VisualElement name="Leaderboard" style="flex-grow: 0; height: 60%; margin-top: 40px; margin-right: 40px; margin-bottom: 40px; margin-left: 40px; align-items: center; justify-content: flex-start;">
+            <ui:VisualElement style="flex-grow: 0.2; height: auto;" />
+            <ui:Label tabindex="-1" text="LEADERBOARD" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Heading" class="text" style="color: rgb(0, 0, 0); font-size: 117px; -unity-font: url(&quot;project://database/Assets/Crazyball-game-template/Fonts/Crazyball.TTF?fileID=12800000&amp;guid=987bb9dbd4717bd40a9f78b7ec5780d0&amp;type=3#Crazyball&quot;);" />
+            <ui:VisualElement name="VisualElement" style="flex-grow: 0.2; flex-direction: row; align-items: stretch; justify-content: center; align-self: center;">
+                <ui:VisualElement style="flex-grow: 0.5; width: 0; display: none;" />
+                <ui:VisualElement name="Rank" style="flex-grow: 0; width: auto; left: auto; -unity-text-align: upper-left;">
+                    <ui:Label tabindex="-1" text="      " parse-escape-sequences="true" display-tooltip-when-elided="true" name="Rank_Heading" class="heading text" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="0_Rank" class="text entries" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="1_Rank" class="text entries" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="2_Rank" class="text entries" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="3_Rank" class="text entries" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="4_Rank" class="text entries" style="display: flex;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="5_Rank" class="text entries" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="6_Rank" class="text entries" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="7_Rank" class="text entries" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="8_Rank" parse-escape-sequences="false" enable-rich-text="true" class="text entries" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="9_Rank" class="text entries" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Name" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Name" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name_Heading" class="text heading" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="0_Name" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="1_Name" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="2_Name" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="3_Name" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="4_Name" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="5_Name" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="6_Name" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="7_Name" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="8_Name" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="9_Name" class="text entries" style="-unity-text-align: upper-left;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Score" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Score" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Score_Heading" class="heading text" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="0_Score" class="entries text" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="1_Score" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="2_Score" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="3_Score" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="4_Score" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="5_Score" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="6_Score" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="7_Score" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="8_Score" class="text entries" style="-unity-text-align: upper-left;" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="9_Score" class="text entries" style="-unity-text-align: upper-left;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Controls_MainMenu" style="flex-grow: 0; height: 40%; align-items: center; justify-content: center; display: flex;">
+            <ui:VisualElement name="VisualElement" style="flex-grow: 0; height: 50%; width: 100%; align-items: center;">
+                <ui:Label tabindex="-1" text="Best Score" parse-escape-sequences="true" display-tooltip-when-elided="true" class="text score" style="-unity-font: url(&quot;project://database/Assets/Crazyball-game-template/Fonts/Crazyball.TTF?fileID=12800000&amp;guid=987bb9dbd4717bd40a9f78b7ec5780d0&amp;type=3#Crazyball&quot;);" />
+                <ui:Label tabindex="-1" text="000" parse-escape-sequences="true" display-tooltip-when-elided="true" class="text score" style="-unity-font: url(&quot;project://database/Assets/Crazyball-game-template/Fonts/Crazyball.TTF?fileID=12800000&amp;guid=987bb9dbd4717bd40a9f78b7ec5780d0&amp;type=3#Crazyball&quot;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="VisualElement" style="flex-grow: 0; height: 50%; flex-direction: row; align-items: center; width: 100%; justify-content: space-around; align-self: flex-end;">
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ExitButton" style="background-image: url(&quot;project://database/Assets/Crazyball-game-template/Textures/Menu/exitButton.png?fileID=2800000&amp;guid=8a89e6e2a36e4fc49a0a6422c2d727a6&amp;type=3#exitButton&quot;); width: 23%; height: 50%; -unity-font: url(&quot;project://database/Assets/Crazyball-game-template/Fonts/Crazyball.TTF?fileID=12800000&amp;guid=987bb9dbd4717bd40a9f78b7ec5780d0&amp;type=3#Crazyball&quot;); scale: 1 1; left: 0; background-color: rgba(188, 188, 188, 0); -unity-background-image-tint-color: rgb(255, 255, 255); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);" />
+                <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlayButton" style="background-image: url(&quot;project://database/Assets/Crazyball-game-template/Textures/Menu/btn.png?fileID=2800000&amp;guid=39a122082ec2dbe4298006998ff76b4a&amp;type=3#btn&quot;); width: 31%; height: 50%; -unity-font: url(&quot;project://database/Assets/Crazyball-game-template/Fonts/Crazyball.TTF?fileID=12800000&amp;guid=987bb9dbd4717bd40a9f78b7ec5780d0&amp;type=3#Crazyball&quot;); scale: 1 1; background-color: rgba(188, 188, 188, 0); font-size: 99px; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
